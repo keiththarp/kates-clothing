@@ -8,7 +8,7 @@ import './header.scss';
 const Header = ({ currentUser }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
-      <h1>Kate's Clothes</h1>
+      <h1 className='logo'>Kate's Clothes</h1>
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
