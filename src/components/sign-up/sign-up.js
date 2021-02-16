@@ -30,7 +30,7 @@ class SignUp extends React.Component {
     };
 
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(email, password)
+      const { user } = await auth.createUserWithEmailAndPassword(email, password);
 
       await createUserProfileDocument(user, { displayName });
 
@@ -48,7 +48,7 @@ class SignUp extends React.Component {
 
   handleChange = event => {
     const { name, value } = event.target;
-    console.log(value);
+
     this.setState({ [name]: value })
   }
 
