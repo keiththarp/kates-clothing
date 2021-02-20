@@ -1,0 +1,13 @@
+.art-item {
+  cursor: pointer;
+
+  img {
+    width: 350px;
+    transition: padding 500ms, border 250ms;
+
+    &:hover {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  }
+}

@@ -4,12 +4,13 @@ import { connect } from 'react-redux';
 
 import './App.css';
 
-import Header from './components/header/header'
+import Header from './components/header/header';
 import HomePage from './views/homepage/homepage';
 import ShopPage from './views/shop/shop';
-import LoginPage from './views/login-page/login-page'
+import ArtPage from './views/art/art-page';
+import LoginPage from './views/login-page/login-page';
 import { auth, createUserProfileDocument } from './firebase/firebase';
-import { setCurrentUser } from '../src/redux/user/user-actions'
+import { setCurrentUser } from '../src/redux/user/user-actions';
 
 class App extends React.Component {
 
@@ -45,6 +46,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/shop' component={ShopPage} />
+          <Route exact path='/art' component={ArtPage} />
           <Route
             exact
             path='/login'
