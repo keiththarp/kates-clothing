@@ -1,13 +1,21 @@
 .art-item {
+  overflow: hidden;
   cursor: pointer;
+  width: 350px;
+  height: 300px;
+  margin: 15px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 350px;
-    transition: padding 500ms, border 250ms;
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 
     &:hover {
-      border: 1px solid black;
-      padding: 10px;
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
 }
